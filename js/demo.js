@@ -362,7 +362,7 @@ class Engine
         var scope = this;
 
         var onLoadObj = function ( event ) {
-            //event.detail.loaderRootNode.scale.set(scope.SCALE, scope.SCALE, scope.SCALE);
+            event.detail.loaderRootNode.scale.set(scope.SCALE, scope.SCALE, scope.SCALE);
             scope.scene.add( event.detail.loaderRootNode );
             scope.worldcenter = new THREE.Vector3();//scope.getCentroid();
 
